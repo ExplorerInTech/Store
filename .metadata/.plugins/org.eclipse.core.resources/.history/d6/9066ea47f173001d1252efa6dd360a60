@@ -1,0 +1,35 @@
+package us.mi.okemos.java;
+
+import us.mi.okemos.java.vegetables.Vegetable;
+
+public class Java {
+	
+	static String storeName;
+
+	public static String getStoreName() {
+		return storeName;
+	}
+
+	public static void setStoreName(String storeName) {
+		Java.storeName = storeName;
+	}
+	
+	static {
+		System.out.println("Inside store static block");
+	}
+	
+	public static String getStoreThings() {
+		Vegetable broccoli = new Vegetable();
+		veg.setName("broccoli");
+		
+		veg = new Vegetable();
+		veg.setName("potato");
+		
+		return veg.getName();
+	}
+	
+	
+	
+	
+
+}

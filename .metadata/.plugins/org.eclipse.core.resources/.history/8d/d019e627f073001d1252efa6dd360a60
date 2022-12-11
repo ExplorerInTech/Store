@@ -1,0 +1,10 @@
+package us.mi.okemos.java.vegetables;
+
+public class Vegetable {
+	
+	String name;
+	
+	
+	
+
+}
