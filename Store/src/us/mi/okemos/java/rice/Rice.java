@@ -1,5 +1,10 @@
 package us.mi.okemos.java.rice;
 
-public class Rice {
+import us.mi.okemos.java.Product;
+import us.mi.okemos.java.vegetables.Vegetable;
 
+public class Rice extends Product{
+	public void test() {
+	
+	}
 }

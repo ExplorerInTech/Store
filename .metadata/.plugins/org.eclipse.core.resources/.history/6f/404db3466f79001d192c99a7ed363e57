@@ -1,0 +1,13 @@
+package us.mi.okemos.java;
+
+public class Product {
+	
+	boolean isFresh;
+	
+	boolean hasBarCode;
+	
+	public String getBarCode() {
+		return "This is the barcode";
+	}
+
+}

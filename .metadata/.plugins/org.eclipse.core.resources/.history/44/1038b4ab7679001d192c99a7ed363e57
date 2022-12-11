@@ -1,0 +1,11 @@
+package us.mi.okemos.java.rice;
+
+import us.mi.okemos.java.Product;
+import us.mi.okemos.java.vegetables.Vegetable;
+
+public class Rice {
+	public void test() {
+		Product product = new Product();
+		product.isFresh();
+	}
+}

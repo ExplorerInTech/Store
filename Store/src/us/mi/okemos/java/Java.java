@@ -1,5 +1,6 @@
 package us.mi.okemos.java;
 
+import us.mi.okemos.java.rice.Rice;
 import us.mi.okemos.java.vegetables.Vegetable;
 
 public class Java {
@@ -10,7 +11,7 @@ public class Java {
 		return storeName;
 	}
 
-	public static void setStoreName(String storeName) {
+	public void setStoreName(String storeName) {
 		Java.storeName = storeName;
 	}
 	
@@ -23,15 +24,23 @@ public class Java {
 		System.out.println("Inside store static block2");
 	}
 	
-	public static String getStoreThings() {
-		Vegetable broccoli = new Vegetable();
-		broccoli.setName("broccoli");
+	public String getStoreThings() {
+//		Vegetable broccoli = new Vegetable();
+//		broccoli.setName("broccoli");
 		
 		Vegetable potato = new Vegetable();
 		potato.setName("potato");
+		potato.setFresh(false);
+		potato.checkStorePolicy(potato);
+		potato.isFresh();
 		
-		return broccoli.getName() + " " +potato.getName();
+		Rice rice= new Rice();
+		rice.isFresh();
+
+		return potato.getName();
 	}
+	
+	
 	
 	
 	
